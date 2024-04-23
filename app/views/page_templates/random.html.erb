@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rails RPS</title>
+    <title>Rails Dynamic Dice</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -11,12 +11,12 @@
 
   <body>
     <h1><%=@num_dice%>d<%=@sides_dice%></h1>
-    
-    <!--<ul>
-    <%for @rolls.each do |roll|%>
-      <li><%=roll%></li>
-    <%end%>
-    </ul> -->
+  
+    <ul>
+      <%@rolls.each do |roll|%>
+        <li><%=roll%></li>
+      <%end%>
+    </ul>
 
   </body>
 </html>
