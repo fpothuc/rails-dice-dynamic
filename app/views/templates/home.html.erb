@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rails RPS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <style>
+      body {
+        background-color: #DACEBE;
+        color: #6E8097;
+      }
+      body a {
+        background-color: #E1C7D4;
+        color: #7A9A8E;
+      }
+      .navbar {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        border: thin solid black;
+      }
+      .navbar td {
+        border: thin solid black;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table class="navbar">
+      <tr>
+        <td><a href="/">Home</a></td>
+        <td><a href="/rock">Play Rock</a></td>
+        <td><a href="/paper">Play Paper</a></td>
+        <td><a href="/scissors">Play Scissors</a></td>
+      </tr>
+    </table>
+
+    <h1>Home</h1>
+    <h1>Welcome to Dice Roller</h1>
+    <p><%=@rand_move%></p>
+  </body>
+</html>
