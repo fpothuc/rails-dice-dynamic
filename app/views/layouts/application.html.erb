@@ -6,22 +6,38 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <style>
+      body {
+        background-color: ##D2D0BA;
+        color: #7B9E87;
+      }
+      body a {
+        color: #99AE92;
+        text-decoration: none;
+      }
       .navbar {
-        display: flex;
-      	justify-content: space-around;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        border: thin solid black;
+      }
+      .navbar td {
+        border: thin solid black;
+        box-sizing: border-box;
       }
     </style>
     
   </head>
 
   <body>
-    <div class="navbar">
-      <div><a href="/">Home</a></div>
-      <div><a href="/dice/2/6">2d6</a></div>
-      <div><a href="/dice/2/10">2d10</a></div>
-      <div><a href="/dice/1/20">1d20</a></div>
-      <div><a href="/dice/5/4">5d4</a></div>
-    </div>
+    <table class="navbar">
+      <tr>
+        <td><a href="/">Home</a></td>
+        <td><a href="/rock">2d6<a></td>
+        <td><a href="/paper">2d10</a></td>
+        <td><a href="/scissors">1d20</a></td>
+        <td><a href="/scissors">4d5</a></td>
+      </tr>
+    </table>
 
     <%= yield %>
 
